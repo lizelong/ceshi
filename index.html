@@ -1,0 +1,47 @@
+---
+layout: base
+---
+
+<!-- Page Header -->
+<header class="masthead" style="background-image: url('img/home-bg.jpg')">
+  <div class="overlay"></div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="site-heading">
+          <h1>永不止步</h1>
+          <span class="subheading">身体和灵魂都要在路上，生命不息，奋斗不止！</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Main Content -->
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-lg-8 col-md-10 mx-auto">
+      
+      <!-- 文章列表开始 -->
+      {% for post in site.posts %}
+        <div class="post-preview">
+          <a href="{{site.baseurl}}{{post.url}}">
+            <h2 class="post-title">{{post.title}}</h2>
+            <h3 class="post-subtitle">{{post.excerpt|strip_html|truncate:100}}</h3>
+          </a>
+          <p class="post-meta">Posted by <a href="#">{{post.author|default:site.author}}</a> on {{post.date|date_to_long_string}}</p>
+        </div>
+        <hr>
+      {% endfor %}
+      <!-- 文章列表结束 -->
+      
+      <!-- Pager -->
+      <div class="clearfix">
+        <a class="btn btn-primary float-left" href="#">&larr; 上一页</a>
+        <a class="btn btn-primary float-right" href="#">下一页 &rarr;</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<hr>
