@@ -12,7 +12,7 @@
   <h3 style="margin-top:50px">友情链接</h3>
   <hr>
   <div>
-  	{% for obj in site.friends %}
+  	{% for obj in site.data.friends.list %}
 	<p><a href="">{{obj.name}}：{{obj.url}}</a></p>
 	{% endfor %}
   </div>
