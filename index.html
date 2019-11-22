@@ -25,7 +25,7 @@ layout: base
       <!-- 文章列表开始 -->
       {% for post in site.posts %}
         <div class="post-preview">
-          <a href="{{post.url}}">
+          <a href="{{site.baseurl}}{{post.url}}">
             <h2 class="post-title">{{post.title}}</h2>
             <h3 class="post-subtitle">{{post.excerpt|strip_html|truncate:100}}</h3>
           </a>
