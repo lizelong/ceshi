@@ -3,7 +3,7 @@ layout: base
 ---
 
 <!-- Page Header -->
-<header class="masthead" style="background-image: url('img/home-bg.jpg')">
+<header class="masthead" style="background-image: url('{{site.baseurl}}/img/home-bg.jpg')">
   <div class="overlay"></div>
   <div class="container-fluid">
     <div class="row">
@@ -20,7 +20,7 @@ layout: base
 <!-- Main Content -->
 <div class="container-fluid">
   <div class="row">
-    <div class="col-lg-8 col-md-10 mx-auto">
+    <div class="col-lg-8 col-md-8 mx-auto">
       
       <!-- 文章列表开始 -->
       {% for post in paginator.posts %}
@@ -50,6 +50,8 @@ layout: base
         {% endif %}
       </div>
     </div>
+
+    {% include aside.html %}
   </div>
 </div>
 

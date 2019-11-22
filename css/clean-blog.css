@@ -409,3 +409,5 @@ footer .copyright {
   font-size: 16px;
   padding: 25px 35px;
 }
+.taglist a{display: inline-block;padding:0 10px; border:1px solid gray;border-radius:50px;margin:3px;}
+.taglist a:hover{text-decoration: none; color:#38f; border-color:#38f;transform:scale(1.1);}
