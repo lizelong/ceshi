@@ -9,9 +9,9 @@ plugins: [jekyll-paginate]
 
 # 友链列表
 friends: [
-    {name: 百度, url: https://www.baidu.com},
-    {name: 大帅哥, url: https://www.lizelong.com},
-    {name: 不要脸, url: https://www.buyaolian.com},
-    {name: 阿里巴巴, url: https://www.1688.com},
-    {name: 腾讯, url: https://www.qq.com},
+	{name: 百度, url: https://www.baidu.com},
+	{name: 大帅哥, url: https://www.lizelong.com},
+	{name: 不要脸, url: https://www.buyaolian.com},
+	{name: 阿里巴巴, url: https://www.1688.com},
+	{name: 腾讯, url: https://www.qq.com},
 ]
